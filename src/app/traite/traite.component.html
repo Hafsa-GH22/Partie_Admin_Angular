@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 id="title"> Les fiches traités</h1>
+        <div id="cont">
+            <div *ngFor = "let id of ficheIdsTraite" id="card">
+                <span>  Demande non traité </span><br>
+                <a routerLink="/usertrait" (click)="user(id['user_id'])" >  Plus d'infos <i class="fa fa-sign-out"></i><br></a>
+            </div>
+        </div>
+</div>

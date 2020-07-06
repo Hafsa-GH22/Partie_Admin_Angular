@@ -1,0 +1,42 @@
+*{
+    font-family: candara;
+}
+#cont {
+    padding-left: 150px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* #all {
+    background-color: azure;
+} */
+#card {
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+    margin-left: 250px;
+    transition: .5s;
+    border-radius: 7px;
+}
+#card:hover {
+    background-color: rgb(240, 217, 236);
+}
+a {
+    transition: .5s;
+    padding-left: 100px;
+}
+a:hover {
+    padding-left: 130px;
+    color: darksalmon;
+}
+#title {
+    padding-left: 150px;
+    padding-top: 10px;
+    text-align: center;
+}
+span {
+    text-align: left;
+    padding-left: 2px;
+    text-shadow: 2px 1px 2px rgb(37, 37, 37);
+    font-size: 25px;
+}

@@ -1,0 +1,15 @@
+*{
+    font-family: candara;
+    font-weight: bold;
+}
+#cont {
+    padding-left: 300px;
+}
+h1 {
+    text-align: left;
+    padding-top: 10px;
+}
+img {
+    width: 650px;
+    height: 450px;
+}

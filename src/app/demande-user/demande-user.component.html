@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 id="title"> Fiche de <span  id="tit">{{ infosUser["prenom"] }} </span> </h1>
+    <div id="cont">
+        <div id="card">
+            <h3 id="subtitle"> Informations personnelles </h3>
+            <ul>
+                <li> <span>Nom :</span> {{ infosUser["nom"] }} </li>
+                <li> <span>Prénom :</span> {{ infosUser["prenom"] }} </li>
+                <li> <span>Age : </span>{{ infosUser["age"] }} </li>
+                <li> <span>Sexe :</span> {{ infosUser["sexe"] }} </li>
+                <li> <span>Adresse :</span> {{ infosUser["adresse"] }} </li>
+                <li> <span>Téléphone :</span> {{ infosUser["telephone"] }} </li>
+                <li> <span>Ville :</span> {{ infosUser["ville"] }} </li>
+            </ul>
+        </div>
+        <div id="card">
+            <h3 id="subtitle"> Réponses des questions </h3>
+            <ul>
+                <li> <span>Testé :</span> {{ fiche["test"] }} </li>
+                <li> <span>Isolé :</span> {{ fiche["isolement"] }} </li>
+                <li> <span>Situations : </span>{{ fiche["situation"] }} </li>
+                <li> <span>Symptomes :</span> {{ fiche["symptome"] }} </li>
+                <li> <span>Tousse :</span> {{ fiche["tempsTousse"] }} jours</li>
+                <!-- <li *ngIf="fiche['reponseTest_id'] == 2 "> <span>Résultat :</span> Positif </li>
+                <li *ngIf="fiche['reponseTest_id'] == 3 "> <span>Résultat :</span> Négatif </li> -->
+            </ul>
+        </div>
+    </div>
+        <div id="rep">
+            <select name="test" id="test" [(ngModel)]="idTest" placeholder="Sélectionner le résultat ...">
+                <option value="2">Positif</option>
+                <option value="3">Négatif</option>
+            </select>
+            <button (click)="repondre()"> Répondre </button>
+        </div>
+</div>

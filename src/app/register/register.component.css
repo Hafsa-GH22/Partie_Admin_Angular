@@ -1,0 +1,8 @@
+*{
+    font-family: candara;
+}
+#cont {
+    border: 1px solid black;
+    padding: 30px;
+    background-color: rgb(223, 241, 248);
+}

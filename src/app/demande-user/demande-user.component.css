@@ -1,0 +1,66 @@
+*{
+    font-family: candara;
+}
+#cont {
+    padding-left: 160px;
+    display: inline-flex;
+}
+#card {
+    border: 1px solid black;
+    transition: .5s;
+    border-radius: 7px;
+    margin: 10px;
+    width: 410px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+#title {
+    padding-left: 150px;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+#subtitle {
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+ul {
+    list-style: none;
+    padding-left: 30px;
+}
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+#pos {
+    color: red;
+}
+#neg {
+    color: chartreuse;
+    font-size: 20px;
+}
+#res {
+    padding-left: 150px;
+    text-align: center;
+    font-size: 20px;
+}
+#tit {
+    font-size: 40px;
+}
+#rep {
+    padding-left: 500px;
+}
+select {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+    margin: 10px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgba(132, 220, 241, 0.603);
+}

@@ -1,0 +1,12 @@
+<div class="container" id="all">
+    <h1 id="title"> Les fiches non traités</h1>
+    <div id="cont">
+      <!--   <div class="col-md-6 mt-5 mx-auto">
+            <a routerLink="/userdem" (click)="user(id['user_id'])" *ngFor = "let id of ficheIds"> {{ id["id"] }} <br></a>
+        </div>  -->
+        <div *ngFor = "let id of ficheIds" id="card">
+          <span>  Demande non traité </span><br>
+            <a routerLink="/userdem" (click)="user(id['user_id'])"> Plus d'infos <i class="fa fa-sign-out"></i> </a>
+        </div>
+    </div>
+</div>

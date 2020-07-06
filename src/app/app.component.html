@@ -1,0 +1,42 @@
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<input type="checkbox" id="check">
+<!-- <label for="check">
+  <i class="fa fa-bars" id="btn"></i>
+  <i class="fa fa-close" id="cancel"></i>
+</label> -->
+<div class="sidebar" >
+  <header> Covid19 </header>
+  <ul>
+    <li>
+      <a routerLink="/" id="ac"><i class="fa fa-home"></i> Accueil </a>
+    </li>
+    <li *ngIf="!auth.isLoggedIn()">
+      <a routerLink="/login"><i class="fa fa-external-link"></i> Se connecter </a>
+    </li>
+    <li *ngIf="!auth.isLoggedIn()">
+      <a routerLink="/register"><i class="fa fa-address-card-o"></i> S'inscrire </a>
+    </li>
+    <li *ngIf="auth.isLoggedIn()">
+      <a routerLink="/profile"><i class="fa fa-id-badge"></i> Profil </a>
+    </li>
+    <li *ngIf="auth.isLoggedIn()">
+      <a routerLink="/dashboard"><i class="fa fa-area-chart"></i> Dashboard </a>
+    </li>
+    <li *ngIf="auth.isLoggedIn()">
+      <a routerLink="/demandes"><i class="fa fa-folder"></i> Fiches non traités </a>
+    </li>
+    <li *ngIf="auth.isLoggedIn()">
+      <a routerLink="/traite"><i class="fa fa-folder-open"></i> Fiches traités </a>
+    </li>
+    <li *ngIf="auth.isLoggedIn()">
+      <a routerLink="" (click)="auth.logout()"><i class="fa fa-lock"></i> Logout </a>
+    </li>
+  </ul>
+</div>
+<section>
+  
+</section>
+<router-outlet></router-outlet>
